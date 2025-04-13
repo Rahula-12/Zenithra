@@ -1,10 +1,11 @@
-package com.assignment.zenithra.screens
+package com.assignment.zenithra.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.assignment.zenithra.screens.manga.MangaScreen
 import com.assignment.zenithra.screens.signin.SignInScreen
 
 enum class Screens {

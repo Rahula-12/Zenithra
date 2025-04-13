@@ -1,4 +1,4 @@
-package com.assignment.zenithra.screens
+package com.assignment.zenithra.screens.manga
 
 import androidx.compose.runtime.Composable
 

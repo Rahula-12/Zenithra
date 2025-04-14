@@ -4,9 +4,13 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
+import androidx.paging.Pager
 import com.assignment.zenithra.db.UserDao
+import com.assignment.zenithra.models.MangaEntity
 import com.assignment.zenithra.repository.CurrentUserRepository
 import com.assignment.zenithra.repository.CurrentUserRepositoryImpl
+import com.assignment.zenithra.repository.MangaRepository
+import com.assignment.zenithra.repository.MangaRepositoryImpl
 import com.assignment.zenithra.repository.UserRepository
 import com.assignment.zenithra.repository.UserRepositoryImpl
 import dagger.Module
@@ -20,7 +24,7 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 )
 @InstallIn(ViewModelComponent::class)
 @Module
-object UserRepositoryModule {
+object RepositoryModule {
 
     @Provides
      fun bindUserRepo(userDao: UserDao):UserRepository {
@@ -35,6 +39,11 @@ object UserRepositoryModule {
     @Provides
     fun providesDataStore(@ApplicationContext context: Context):DataStore<Preferences> {
         return context.dataStore
+    }
+
+    @Provides
+    fun providesMangaRepo(pager: Pager<Int, MangaEntity>):MangaRepository {
+        return MangaRepositoryImpl(pager)
     }
 
 }

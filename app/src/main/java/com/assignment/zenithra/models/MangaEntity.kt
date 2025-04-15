@@ -9,5 +9,6 @@ data class MangaEntity(
     val id:Int,
     val title:String,
     val thumb:String,
-    val summary:String
+    val summary:String,
+    val subtitle:String
 )

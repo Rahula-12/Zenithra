@@ -49,7 +49,7 @@ class MangaRemoteMediator(
                     currId=(mangaDb.getMangaDao().getLastManga()?.id?:0)+1
                 }
                 for(mangaItem in mangaList.`data`) {
-                    mangaDb.getMangaDao().insertManga(MangaEntity(currId++, title = mangaItem.title, thumb = mangaItem.thumb,summary=mangaItem.summary))
+                    mangaDb.getMangaDao().insertManga(MangaEntity(currId++, title = mangaItem.title, thumb = mangaItem.thumb,summary=mangaItem.summary, subtitle = mangaItem.sub_title))
                 }
             }
 

@@ -65,6 +65,7 @@ dependencies {
     //Room
     implementation("androidx.room:room-runtime:2.6.1")
     implementation(libs.androidx.paging.common.android)
+//    implementation(libs.play.services.mlkit.face.detection)
     ksp("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-ktx:2.6.1")
     implementation ("androidx.room:room-paging:2.6.1")
@@ -103,4 +104,12 @@ dependencies {
 
     // Coil Compose
     implementation("io.coil-kt:coil-compose:2.2.2")
+
+    // face recognition
+    implementation("com.google.mlkit:face-detection:16.1.5") // Or the latest version
+    implementation("androidx.camera:camera-core:1.3.1")
+    implementation("androidx.camera:camera-camera2:1.3.1")
+    implementation("androidx.camera:camera-lifecycle:1.3.1")
+    implementation("androidx.camera:camera-view:1.3.1")
+    implementation(libs.accompanist.permissions)
 }

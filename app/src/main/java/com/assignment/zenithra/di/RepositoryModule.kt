@@ -42,8 +42,8 @@ object RepositoryModule {
     }
 
     @Provides
-    fun providesMangaRepo(pager: Pager<Int, MangaEntity>):MangaRepository {
-        return MangaRepositoryImpl(pager)
+    fun providesMangaRepo(pager: Pager<Int, MangaEntity>,dataStore:DataStore<Preferences>):MangaRepository {
+        return MangaRepositoryImpl(pager,dataStore)
     }
 
 }

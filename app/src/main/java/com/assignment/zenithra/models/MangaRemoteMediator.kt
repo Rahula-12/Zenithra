@@ -9,9 +9,10 @@ import com.assignment.zenithra.db.MangaDatabase
 import com.assignment.zenithra.network.MangaApiService
 import okio.IOException
 import retrofit2.HttpException
+import javax.inject.Inject
 
 @OptIn(ExperimentalPagingApi::class)
-class MangaRemoteMediator(
+class MangaRemoteMediator @Inject constructor(
     private val mangaDb: MangaDatabase,
     private val mangaApi: MangaApiService
 ) : RemoteMediator<Int, MangaEntity>() {

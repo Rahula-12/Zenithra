@@ -25,6 +25,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextFieldColors
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarColors
 import androidx.compose.runtime.Composable
@@ -133,6 +134,7 @@ fun SignInScreen(
                         placeholder={
                             Text("Your Email Address", color = Color.LightGray)
                         },
+
                         modifier = modifier.padding(10.dp).fillMaxWidth()
                     )
                     OutlinedTextField(

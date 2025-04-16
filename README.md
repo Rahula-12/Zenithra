@@ -45,7 +45,7 @@ Features:
 <h3> 5. Architecture & Best Practices</h3>
 
 <h4>Clean Architecture + MVVM:</h4>
-<b>Separation of concerns with clear layers:</b> Data, Domain, and Presentation.<br>
+<b>Separation of concerns with clear layers:</b> Data and Presentation.<br>
 <b>Jetpack Compose</b> for modern, declarative UI.<br>
 <b>Single Activity Architecture</b> with <b>Jetpack Navigation Component</b> for seamless navigation.<br>
 
@@ -64,8 +64,8 @@ Features:
 
 1. Clone the repository:
 
-    git clone [https://github.com/your-username/mangaverse-app.git](https://github.com/Rahula-12/Zenithra.git)<br>
-    cd mangaverse-app
+    git clone https://github.com/Rahula-12/Zenithra.git<br>
+    cd Zenithra
 
 2. Open the project in Android Studio.
 3. Add your RapidAPI Key for the MangaVerse API:
@@ -74,6 +74,8 @@ Features:
  </ul>
 
 4. Build and run the app on an Android device or emulator.
+
+5. You can also download the apk and run it on your Android Device using following link:- https://github.com/Rahula-12/Zenithra/releases/download/debug/app-debug.apk
 
 <h2>API Integration</h2>
 <ul>
@@ -87,19 +89,20 @@ Features:
 
 <h2>Screenshots</h2>
 <h3>1. Sign In Screen</h3>
-<img alt="Sign In Screen" src="https://via.placeholder.com/300x600?text=Sign+In+Screen">
+<img alt="Sign In Screen" src="SignInScreen.png" width="100" height="200">
 <h3>2. Manga Screen</h3>
-<img alt="Manga Screen" src="https://via.placeholder.com/300x600?text=Manga+Screen">
-<h3>3. Manga Description Screen</h3>
-<img alt="Manga Description Screen" src="https://via.placeholder.com/300x600?text=Manga+Description+Screen">
-<h3>4. Face Recognition Screen</h3>
-<img alt="Face Recognition Screen" src="https://via.placeholder.com/300x600?text=Face+Recognition+Screen">
+<img alt="Manga Screen" src="MangaScreen.png" width="100" height="200">
+<h3>3. Manga Detail Screen</h3>
+<img alt="Manga Detail Screen" src="MangaDetailScreen.png" width="100" height="200">
+<h3>4. Face Inside Box</h3>
+<img alt="Face Inside Box" src="FaceInsideBox.jpeg" width="100" height="200">
+<h3>4. Face Outside Box</h3>
+<img alt="Face Inside Box" src="FaceOutSideBox.jpeg" width="100" height="200">
 
 <h2>Key Features</h2>
 <h3>Clean Architecture</h3>
 	1. <b>Data Layer:</b> Handles data sources (API, Room DB).<br>
-	2. <b>Domain Layer:</b> Contains business logic (use cases).<br>
-	3. <b>Presentation Layer:</b> Manages UI and user interactions.<br>
+	2. <b>Presentation Layer:</b> Manages UI, user interactions and contains business logic inside viewmodels.<br>
 <h3>Jetpack Compose</h3>
 <ul>
   <li>Declarative UI for building modern Android apps.</li>
@@ -111,12 +114,12 @@ Features:
 
 <h2>Future Enhancements</h2>
 	1. Add user profile management.<br>
-	2. Implement dark mode.<br>
-	3. Add more manga details and categories.<br>
-	4. Enhance face detection with additional features (e.g., emotion detection).<br>
+	2. Enhance face detection with additional features (e.g., emotion detection).<br>
 
-<h2>License</h2>
-This project is licensed under the MIT License. See the LICENSE file for details.
+<h2>Video</h2>
+Checkout this video:-
+
+https://www.loom.com/share/ef84ecf288184c0da471326e55d99e81?sid=d58441a5-3a18-4913-82d5-95185c5db38d
 
 <h2>Contributing</h2>
 Contributions are welcome! Please fork the repository and submit a pull request.
